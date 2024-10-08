@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mi Portfolio de Videojuegos</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Marcos Jimenez Saz Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -21,10 +21,37 @@
       text-align: center;
     }
 
+    .logo-container {
+      position: absolute;
+      /* Permite que la imagen se coloque en una posición específica */
+      left: 20px;
+      /* Ajusta la distancia del borde izquierdo */
+      top: 50%;
+      /* Centra verticalmente en el encabezado */
+      transform: translateY(-50%);
+      /* Compensa la altura de la imagen para centrarla */
+    }
+
+    .logo {
+      height: 50px;
+      /* Ajusta la altura de la imagen según tus necesidades */
+      width: auto;
+      /* Mantiene la relación de aspecto */
+    }
+
     header h1 {
       margin: 0;
       font-size: 2.5em;
       color: #00ff99;
+    }
+
+    h2 {
+      text-align: left;
+      color: #00ff99;
+    }
+
+    h3 {
+      font-size: 2.0em;
     }
 
     nav {
@@ -50,6 +77,8 @@
 
     .about {
       text-align: justify;
+      width: 70%;
+      margin: auto;
     }
 
     .projects,
@@ -106,81 +135,104 @@
 </head>
 
 <body>
-
   <header>
-    <h1>Portfolio de Videojuegos</h1>
+    <h1>Marcos Jimenez Saz</h1>
+    <h4>Video Game Programmer</h4>
     <nav>
       <a href="#about">About Me</a>
-      <a href="#projects">Proyectos</a>
-      <a href="#skills">Habilidades</a>
-      <a href="#contact">Contacto</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p class="about">I am a videogame programmer graduated from ESAT, with experience in developing projects published on platforms
-      like Steam, using tools like Unreal Engine and Unity. During my training, I presented a project at a technology
-      and videogame congress in Valencia called DreamHack / OWN, excelling in both technical skills and teamwork.
-      Passionate about video game development, I continue to train on platforms like Udemy to keep up to date with the
-      latest technologies and bring innovative solutions to the sector.</p>
-  </section>
-
-  <section id="projects" class="projects">
-    <h2>Proyectos</h2>
-
-    <div class="project">
-      <h3>Juego de Plataforma</h3>
-      <img src="plataforma.jpg" alt="Juego de Plataforma">
-      <p>Un emocionante juego de plataformas en 2D con varios niveles y mecánicas divertidas.</p>
-    </div>
-
-    <div class="project">
-      <h3>Juego de Estrategia</h3>
-      <img src="estrategia.jpg" alt="Juego de Estrategia">
-      <p>Un juego de estrategia en tiempo real con IA avanzada y batallas épicas.</p>
-    </div>
-
-    <div class="project">
-      <h3>Juego de Aventura</h3>
-      <img src="aventura.jpg" alt="Juego de Aventura">
-      <p>Una aventura 3D que te llevará por mundos misteriosos y acertijos desafiantes.</p>
+    <div class="about">
+      <p>
+        Hi, I'm Marcos Jiménez Saz, a passionate videogame programmer with a focus on creating interactive and exciting
+        experiences. I graduated in videogame programming at ESAT, where I developed a solid foundation in videogame
+        programming and design. Throughout my training, I have worked on several projects, using tools such as Unity and
+        Unreal Engine, and programming languages such as C, C++ and C#.
+      </p>
+      <p>
+        I participated in a technology and videogame congress called OWN (formerly DreamHack) in Valencia, where I had
+        the opportunity to present one of my projects in a booth and later publish it on the Steam platform for free,
+        sharing my ideas and learning from other professionals in the industry. This experience reinforced my commitment
+        to keep learning and growing. I'm excited for the opportunity to contribute to innovative projects and
+        collaborate with others to create games
+        that leave an impression on players.
+      </p>
+      <p>
+        I am currently training through courses on platforms like Udemy to improve my skills and keep up to date with
+        the latest trends in videogame development.
+      </p>
     </div>
   </section>
 
-  <section id="skills" class="skills">
-    <h2>Habilidades</h2>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Shelley Mannor</h3>
+        <img src="Foto.jpg" alt="Juego de Plataforma">
+        <p>Un emocionante juego de plataformas en 2D con varios niveles y mecánicas divertidas.</p>
+      </div>
 
-    <div class="skill">
-      <h3>Lenguajes de Programación</h3>
-      <p>C#, C++, Python, JavaScript</p>
+      <div class="project">
+        <h3>Engine</h3>
+        <img src="estrategia.jpg" alt="Juego de Estrategia">
+        <p>Un juego de estrategia en tiempo real con IA avanzada y batallas épicas.</p>
+      </div>
+
+      <div class="project">
+        <h3>IA GPU Automated</h3>
+        <img src="aventura.jpg" alt="Juego de Aventura">
+        <p>Una aventura 3D que te llevará por mundos misteriosos y acertijos desafiantes.</p>
+      </div>
+
+      <div class="project">
+        <h3>SDL Solar System</h3>
+        <img src="aventura.jpg" alt="Juego de Aventura">
+        <p>Una aventura 3D que te llevará por mundos misteriosos y acertijos desafiantes.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="skill">
-      <h3>Motores de Juego</h3>
-      <p>Unity, Unreal Engine, Godot</p>
-    </div>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>Lenguajes de Programación</h3>
+        <p>C#, C++, Python, JavaScript</p>
+      </div>
 
-    <div class="skill">
-      <h3>Otras Habilidades</h3>
-      <p>IA para videojuegos, Diseño de niveles, Animación 3D</p>
+      <div class="skill">
+        <h3>Motores de Juego</h3>
+        <p>Unity, Unreal Engine, Godot</p>
+      </div>
+
+      <div class="skill">
+        <h3>Otras Habilidades</h3>
+        <p>IA para videojuegos, Diseño de niveles, Animación 3D</p>
+      </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contacto</h2>
+    <h2>Contact</h2>
     <div class="contact-form">
       <form action="https://example.com/form" method="POST">
-        <input type="text" name="name" placeholder="Tu nombre" required>
-        <input type="email" name="email" placeholder="Tu email" required>
-        <textarea name="message" rows="5" placeholder="Tu mensaje"></textarea>
-        <button type="submit">Enviar</button>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" rows="5" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
       </form>
     </div>
   </section>
 
   <footer>
-    <p>Desarrollado por [Tu Nombre] &copy; 2024</p>
+    <p>Desarrollado por Marcos Jimenez Saz &copy; 2024</p>
   </footer>
 
 </body>
